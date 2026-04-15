@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&family=Inter:wght@400;500;600&family=Lexend:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Epilogue", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Lexend", sans-serif;
+
+  --color-primary: #00113a;
+  --color-primary-container: #002366;
+  --color-secondary-container: #fcd400;
+  --color-on-secondary-container: #6e5c00;
+  --color-surface: #f9f9fc;
+  --color-surface-container-low: #f3f3f6;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #1a1c1e;
+  --color-on-surface-variant: #444650;
+  --color-primary-fixed-dim: #b3c5ff;
+  
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #410002;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body;
+  }
+}
+
+.editorial-gradient {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-container) 100%);
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
